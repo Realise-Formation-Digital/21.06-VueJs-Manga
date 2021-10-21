@@ -1,5 +1,7 @@
 <template>
-  <div>Foot</div>
+  <div>Foot
+    <a href="./contact"></a>
+  </div>
 </template>
 
 <script>
