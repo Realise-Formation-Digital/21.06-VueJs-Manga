@@ -5,23 +5,23 @@ Vue.use(VueRouter)
 //Pages
 import Home from "../pages/Home.vue";
 import Manga from "../pages/Manga.vue";
-import Contact from "../pages/AboutUs.vue";
-import AboutUs from "../pages/Contact.vue";
+import AboutUs from "../pages/AboutUs.vue";
+import Contact from "../pages/Contact.vue";
 
 const routes = [
     { path: '/', 
       component: Home
     },
 
-    { path: '/Manga', 
+    { path: '/manga', 
       component: Manga
     },
 
-    { path: '/AboutUs', 
+    { path: '/aboutus', 
       component: AboutUs
     },
 
-    { path: '/Contact', 
+    { path: '/contact', 
       component: Contact
     },
 ]
