@@ -1,16 +1,14 @@
 <template>
-    
+    <h1>ABOUT US</h1>
+
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
 
-export default defineComponent({
-    setup() {
-        
-    },
-})
 </script>
 <style scoped>
-
+h1{
+    color: red;
+    margin-top: center;
+}
 </style>
