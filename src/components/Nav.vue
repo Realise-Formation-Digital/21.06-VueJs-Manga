@@ -8,7 +8,7 @@
 
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-text><b-btn to="/" variant="outline-primary">Home</b-btn></b-nav-text>
+        <b-nav-text><b-btn to="/home" variant="outline-primary">Home</b-btn></b-nav-text>
       </b-navbar-nav>
       <b-navbar-nav>
         <b-nav-text><b-btn to="/manga" variant="outline-primary">Mangas</b-btn></b-nav-text>
