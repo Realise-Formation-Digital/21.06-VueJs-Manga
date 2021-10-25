@@ -8,15 +8,14 @@
       width="2000px"
     ></b-img>
     <p>
-      Nous sommes un'enterprise des chevalles shock!!! <br />L'enterprise est
-      crée en juin 2021 par Marco, Frederick, Julien Manga est un site créé par
-      les fans pour les fans. Bien que des millions d’utilisateurs utilisent le
-      site chaque mois, notre personnel se compose uniquement d’une petite
-      équipe de bénévoles, y compris le fondateur, les développeurs et les
-      modérateurs de contenu. Si vous êtes intéressé à contribuer, vérifiez
-      comment soutenir le site. Pour vous aider avec des questions ou des
-      suggestions sur le contenu du site (comme les anime, manga ou personnes),
-      vous pouvez contacter le bon ensemble de modérateurs (voir ci-dessous).
+      L'enterprise est crée en juin 2021 par Marco, Frederick, Julien. Manga est
+      un site créé par les fans pour les fans. Bien que des millions
+      d’utilisateurs utilisent le site chaque mois, notre personnel se compose
+      uniquement d’une petite équipe de bénévoles, y compris le fondateur, les
+      développeurs et les modérateurs de contenu. Si vous êtes intéressé à
+      contribuer, vérifiez comment soutenir le site. Pour vous aider avec des
+      questions ou des suggestions sur le contenu du site (comme les anime,
+      manga ou personnes), vous pouvez contacter le bon ensemble de modérateurs.
     </p>
     <h2 class="ml2">ÈQUIPE</h2>
     <!--add card team-->
@@ -89,10 +88,11 @@ p {
   text-align: center;
 }
 .card-title {
-    margin-bottom: -1.5rem;
+  margin-bottom: -1.5rem;
 }
-h4, .h4 {
-    text-align: center;
-    font-size: 1.5rem;
+h4,
+.h4 {
+  text-align: center;
+  font-size: 1.5rem;
 }
 </style>
