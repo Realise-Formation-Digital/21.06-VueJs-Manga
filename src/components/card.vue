@@ -17,7 +17,7 @@
       End date:      {{end_date}}
     </b-card-text>
 
-    <b-button class="center" :href="url" variant="primary">Voir plus</b-button>
+    <b-button class="center edinbutton" :href="url" variant="primary">Voir plus</b-button>
   </b-card>
 
 
@@ -70,7 +70,17 @@ export default {
 }
 .card-img, .card-img-top {
 
-  width: 25%;
+width: 320px;
+height: 320px;
+}
+.card-body {
+  height: 280px;
+}
+.edinbutton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
 }
 
 
