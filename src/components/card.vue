@@ -1,41 +1,38 @@
 <template>
 
+      <b-card
+        :title="mangaTitle"
+        :img-src="img"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width:300px; margin:5px;"
+        class="mb-2 edinslika"
+        @click="selectManga()"
+      >
+        <b-card-text> Rank: {{ rank }} <br /> </b-card-text>
 
+    <b-button href="#" class="dugme" variant="primary" @click="selectManga()">VOIR</b-button>
+      </b-card>
 
-  <b-card
-    :title="mangaTitle"
-    :img-src="img"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2"
-  >
-    <b-card-text>
-      Rank:      {{rank}} <br>
-      Start date:      {{start_date}}<br>
-      End date:      {{end_date}}
-    </b-card-text>
-
-    <b-button class="center edinbutton" :href="url" variant="primary">Voir plus</b-button>
-  </b-card>
-
-
-  
 </template>
 
 <script>
 export default {
   name: "Manga",
   props: {
+    id: {
+      type: Number,
+      required: false,
+    },
     mangaTitle: {
       type: String,
       default: "",
       required: true,
     },
     rank: {
-      type: String,
-      default: "",
+      type: Number,
+      default: 0,
       required: false,
     },
     img: {
@@ -46,42 +43,41 @@ export default {
     start_date: {
       type: String,
       default: "",
-      required: true,
+      required: false,
     },
-      end_date: {
+    end_date: {
       type: String,
       default: "",
-      required: true,
+      required: false,
     },
   },
+  methods: {
+    selectManga() {
+      console.log("Clicked");
+      this.$emit("selectedManga", this.id);
+    },
+  },  
 };
 
-
-
 /*MODAL START*/
-
-
 
 </script>
 
 <style scoped>
-.center {
-      background: red;
-}
-.card-img, .card-img-top {
+.edinkartica{
+  height: 520px;
 
-width: 320px;
-height: 320px;
+
 }
-.card-body {
-  height: 280px;
+.card-img-top {
+  width: 300px;
+  height: 270px;
+
 }
-.edinbutton {
-  position: absolute;
-  bottom: 10px;
+.dugme {
   right: 10px;
-
+  position: absolute;
+bottom: 10px;
 }
-
 
 </style>
