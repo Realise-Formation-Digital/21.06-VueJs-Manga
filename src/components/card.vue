@@ -1,18 +1,23 @@
 <template>
+
+
+
   <b-card
-    :title="manga.title"
+    :title="mangaTitle"
     :img-src="img"
     img-alt="Image"
     img-top
     tag="article"
     style="max-width: 20rem;"
-    class="mb-2" >
+    class="mb-2"
+  >
     <b-card-text>
-      Score:      {{score}}
-      Rank:      {{rank}}
+      Rank:      {{rank}} <br>
+      Start date:      {{start_date}}<br>
+      End date:      {{end_date}}
     </b-card-text>
 
-    <b-button class="center" href="" variant="primary">VIEW</b-button>
+    <b-button class="center" :href="url" variant="primary">Voir plus</b-button>
   </b-card>
 
 
@@ -23,12 +28,12 @@
 export default {
   name: "Manga",
   props: {
-    title: {
+    mangaTitle: {
       type: String,
       default: "",
       required: true,
     },
-    score: {
+    rank: {
       type: String,
       default: "",
       required: false,
@@ -38,7 +43,12 @@ export default {
       default: "",
       required: true,
     },
-    rank: {
+    start_date: {
+      type: String,
+      default: "",
+      required: true,
+    },
+      end_date: {
       type: String,
       default: "",
       required: true,

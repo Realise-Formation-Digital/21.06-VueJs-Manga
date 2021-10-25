@@ -1,30 +1,38 @@
 <template>
-   <div>
-<h1>MANGA</h1>
-        <div v-for="(manga, index) in mangas" :key="index">
-             
+  <div>
+    <h1></h1>
+    test1
+
+    <!-- Butto that trigger the events that get the beer list
+    <b-btn @click="getBeers()">Get Beers </b-btn>
+
+    -->
+
+    <!-- Loop over beers -->
+    <div v-for="(manga, index) in mangas" :key="index">
       <card
-        :title="manga.title"
-        :score="manga.score"
-        :img="manga.image_url"
+        :mangaTitle="manga.title"
         :rank="manga.rank"
+        :img="manga.image_url"
+        :start_date="manga.start_date"
+        :end_date="manga.end_date"
+
       />
     </div>
-</div>
+  </div>
 </template>
 
 <script>
-
 import card from '../components/card.vue'
 const axios = require("axios"); // import axios to use the REST API
 
 export default {
-  name: "manga",
+  name: "Page1",
   components: {
     card
   },
       mounted() {
-      this.getmangas()
+      this.getMangas()
     },
   data() {
     return {
@@ -32,23 +40,22 @@ export default {
     };
   },
   methods: {
+    handleEvent(message) {
+      console.log("Recu", message);
+    },
     
-    async getmangas() {
+    async getMangas() {
       
       // Get the answer from the server (Punk Api) and stock it in result
-      const result = await axios.get("http://192.168.1.61:8000/v3/top/anime/1/");
-      
+      const result = await axios.get("http://192.168.1.61:8000/v3/top/manga/");
+      console.log("result", result);
       // Stock the result in dynamic variable that connect HTML and JS
-      this.mangas = result.data;
+      this.mangas = result.data.top;
     },
   },
 };
-
 </script>
+
 <style scoped>
-h1{
-    color: red;
-    margin-top: center;
-}
 .mb-2 {    float: left; }
 </style>
