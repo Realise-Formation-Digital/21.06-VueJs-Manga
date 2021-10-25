@@ -1,20 +1,20 @@
 <template>
-  <b-card
-    :title="mangaTitle"
-    :img-src="img"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem"
-    class="mb-2"
-  >
-    <b-card-text> Rank: {{ rank }} <br /> </b-card-text>
-    <b-button class="center edinbutton" variant="primary">Voir plus</b-button>
-    <b-button href="#" variant="primary" @click="selectManga()">VOIR</b-button>
-  </b-card>
 
+      <b-card
+        :title="mangaTitle"
+        :img-src="img"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width:300px; margin:5px;"
+        class="mb-2 edinslika"
+        @click="selectManga()"
+      >
+        <b-card-text> Rank: {{ rank }} <br /> </b-card-text>
 
-  
+    <b-button href="#" class="dugme" variant="primary" @click="selectManga()">VOIR</b-button>
+      </b-card>
+
 </template>
 
 <script>
@@ -31,8 +31,8 @@ export default {
       required: true,
     },
     rank: {
-      type: String,
-      default: "",
+      type: Number,
+      default: 0,
       required: false,
     },
     img: {
@@ -43,12 +43,12 @@ export default {
     start_date: {
       type: String,
       default: "",
-      required: true,
+      required: false,
     },
     end_date: {
       type: String,
       default: "",
-      required: true,
+      required: false,
     },
   },
   methods: {
@@ -56,18 +56,7 @@ export default {
       console.log("Clicked");
       this.$emit("selectedManga", this.id);
     },
-          showModal() {
-        this.$refs['my-modal'].show()
-      },
-      hideModal() {
-        this.$refs['my-modal'].hide()
-      },
-      toggleModal() {
-        // We pass the ID of the button that we want to return focus to
-        // when the modal has hidden
-        this.$refs['my-modal'].toggle('#toggle-btn')
-      }
-  },
+  },  
 };
 
 /*MODAL START*/
@@ -75,26 +64,20 @@ export default {
 </script>
 
 <style scoped>
-.center {
-  background: rgb(97, 97, 97);
+.edinkartica{
+  height: 520px;
+
+
 }
-.card-img,
 .card-img-top {
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 270px;
+
 }
-.card-body {
-  height: 130px;
-}
-.edinbutton {
-  position: absolute;
-  bottom: 10px;
+.dugme {
   right: 10px;
+  position: absolute;
+bottom: 10px;
 }
-.mb-2 {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
+
 </style>
