@@ -1,6 +1,11 @@
+<!--
 <template>
   <div>Foot
+    
+    <b-footer>
     <a href="./contact"></a>
+    <b-img src="https://www.myutaku.com/media/personnage/4942.jpg" width="80
+    "></b-footer>
   </div>
 </template>
 
@@ -12,4 +17,4 @@ export default {
 
 <style scoped>
 
-</style>
+</style>-->

@@ -3,20 +3,21 @@
      <b-navbar toggleable="sm" type="light" variant="light">
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-    <b-navbar-brand> Logo </b-navbar-brand>
+    <b-navbar-brand><img src= "https://www.myutaku.com/media/personnage/4942.jpg" width="100
+    "></b-navbar-brand>
 
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-text><b-btn to="/" variant="outline-primary">Home</b-btn></b-nav-text>
       </b-navbar-nav>
       <b-navbar-nav>
-        <b-nav-text><b-btn to="/beers" variant="outline-primary">Mangas</b-btn></b-nav-text>
+        <b-nav-text><b-btn to="/manga" variant="outline-primary">Mangas</b-btn></b-nav-text>
       </b-navbar-nav>
       <b-navbar-nav>
-        <b-nav-text><b-btn to="/beers" variant="outline-primary">À propos</b-btn></b-nav-text>
+        <b-nav-text><b-btn to="/aboutus" variant="outline-primary">About Us</b-btn></b-nav-text>
       </b-navbar-nav>
       <b-navbar-nav>
-        <b-nav-text><b-btn to="/beers" variant="outline-primary">Contact</b-btn></b-nav-text>
+        <b-nav-text><b-btn to="/contact" variant="outline-primary">Contact</b-btn></b-nav-text>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
