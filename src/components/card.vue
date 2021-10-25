@@ -1,4 +1,5 @@
 <template>
+<div>
 
       <b-card
         :title="mangaTitle"
@@ -14,7 +15,7 @@
 
     <b-button href="#" class="dugme" variant="primary" @click="selectManga()">VOIR</b-button>
       </b-card>
-
+</div>
 </template>
 
 <script>
@@ -68,6 +69,7 @@ export default {
   height: 520px;
 
 
+
 }
 .card-img-top {
   width: 300px;
@@ -78,6 +80,9 @@ export default {
   right: 10px;
   position: absolute;
 bottom: 10px;
+}
+html body div#app div.container div div article.card.mb-2.edinslika.edinkartica{
+  float: left;
 }
 
 </style>
