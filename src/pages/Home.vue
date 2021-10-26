@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import carousel from '../components/Carousel.vue'
+import Carousel from '../components/Carousel.vue'
 export default {
   name: "Home",
-  components: {
-   carousel
+   components: {
+   Carousel
   }
 }
 
