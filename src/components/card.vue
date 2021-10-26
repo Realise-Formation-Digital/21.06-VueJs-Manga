@@ -1,25 +1,29 @@
 <template>
-<div>
+  <div>
+    <b-card
+      :title="mangaTitle"
+      :img-src="img"
+      img-alt="Image"
+      img-top
+      tag="article"
+      style="max-width: 200px; height: 360px; margin: 5px"
+      class="mb-2 edinslika"
+      @click="selectManga()"
+    >
+      <b-card-text> Rank: {{ rank }} <br /> </b-card-text>
 
-      <b-card
-        :title="mangaTitle"
-        :img-src="img"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width:300px; margin:5px;"
-        class="mb-2 edinslika"
-        @click="selectManga()"
+      <b-button href="#" class="dugme" variant="primary" @click="selectManga()"
+        >VOIR</b-button
       >
-        <b-card-text> Rank: {{ rank }} <br /> </b-card-text>
-
-    <b-button href="#" class="dugme" variant="primary" @click="selectManga()">VOIR</b-button>
-      </b-card>
-</div>
+    </b-card>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {};
+  },
   name: "Manga",
   props: {
     id: {
@@ -57,32 +61,24 @@ export default {
       console.log("Clicked");
       this.$emit("selectedManga", this.id);
     },
-  },  
+  },
 };
 
 /*MODAL START*/
-
 </script>
 
 <style scoped>
-.edinkartica{
-  height: 520px;
-
-
-
-}
 .card-img-top {
-  width: 300px;
-  height: 270px;
+  height: 200px;
+  width: 198px;
+}
 
+.edinkartica {
+  float: left;
 }
 .dugme {
   right: 10px;
   position: absolute;
-bottom: 10px;
+  bottom: 10px;
 }
-html body div#app div.container div div article.card.mb-2.edinslika.edinkartica{
-  float: left;
-}
-
 </style>
