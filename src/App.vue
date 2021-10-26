@@ -4,8 +4,7 @@
       <b-container>
         <router-view></router-view>
       </b-container>
-    <Foot
-    id="foot"/>
+    <Foot id="foot"/>
 
   </div>
 </template>

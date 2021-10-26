@@ -69,6 +69,9 @@
 <script>
 export default {
   name: "Contact",
+  created () {
+     document.title = "Manga | Contact";
+  },
   data() {
     return {
       form: {
@@ -92,9 +95,9 @@ export default {
       this.form.message = "";
       // Trick to reset/clear native browser form validation state
       this.show = false;
-      /*this.$nextTick(() => {
-          this.show = true
-        })*/
+      this.$nextTick(() => {
+        this.show = true;
+      });
     },
   },
 };
