@@ -59,6 +59,12 @@
 </template>
 
 <script>
+export default {
+  name: "Aboutus",
+            created () {
+            document.title = "Manga | About us";
+        },
+}
 </script>
 
 <style scoped>
