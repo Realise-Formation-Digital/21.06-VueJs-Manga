@@ -6,7 +6,7 @@
       img-alt="Image"
       img-top
       tag="article"
-      style="max-width: 200px; height: 360px; margin: 5px"
+      style="max-width: 200px; height: 360px; margin: 5px; border: 1px solid #0d6efd;;"
       class="mb-2 edinslika"
       @click="selectManga()"
     >
