@@ -9,18 +9,21 @@
   >
     <!-- Text slides with image -->
     <b-carousel-slide>
-          <text-dark><h1>Get the most psychidelics</h1></text-dark>
+       <h1><a href="https://myanimelist.net/character/1706/Martis" class="text-warning">Get the most psychidelics</a></h1>
       <template #img>
         <img
+        id=""
           class="d-block w-100"
+          width="1000"
           height="480"
           src="https://cdn.myanimelist.net/images/manga/3/179882.jpg?s=dac8109140406ca296cf4946296b5037"
           alt="image slot"
        >
       </template>
     </b-carousel-slide>
+
      <b-carousel-slide>
-        <text-dark><h1>Get the most populars</h1></text-dark>
+        <h1 class="text-success">Get the most populars</h1>
       <template #img>
         <img
           class="d-block w-100"
@@ -32,7 +35,7 @@
     </b-carousel-slide>
     
     <b-carousel-slide>
-      <text-dark><h1>Get the most iconics</h1></text-dark>
+      <h1 class="text-dark">Get the most iconics</h1>
       <template #img>
         <img
           class="d-block w-100"
@@ -44,7 +47,7 @@
     </b-carousel-slide>
 
      <b-carousel-slide>
-      <text-dark><h1>Get the most terifics</h1></text-dark>
+      <h1 class="text-danger">Get the most terifics</h1>
       <template #img>
         <img
           class="d-block w-100"
