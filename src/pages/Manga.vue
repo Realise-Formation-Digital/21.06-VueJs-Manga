@@ -57,5 +57,11 @@ export default {
 </script>
 
 <style scoped>
-.mb-2 {    float: left; }
+.tekstba {
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 12;
+-webkit-box-orient: vertical;
+}
 </style>
