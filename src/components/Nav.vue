@@ -1,5 +1,6 @@
 <template>
-  <div>Nav
+  <div>
+    <!--Nav/!-->
      <b-navbar toggleable="sm" type="light" variant="light">
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
@@ -31,6 +32,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
 
 </style>

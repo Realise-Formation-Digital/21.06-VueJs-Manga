@@ -69,9 +69,9 @@
 <script>
 export default {
   name: "Contact",
-            created () {
-            document.title = "Manga | Contact";
-        },
+  created () {
+     document.title = "Manga | Contact";
+  },
   data() {
     return {
       form: {
