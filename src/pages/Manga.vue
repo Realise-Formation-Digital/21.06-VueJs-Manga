@@ -22,7 +22,7 @@
         </div>
       </b-col>
     </b-row>
-
+    <!-- | MODAL | -->
     <b-modal v-model="modalShow">
       <b-card no-body class="overflow-hidden" style="max-width: 540px">
         <b-row no-gutters>
