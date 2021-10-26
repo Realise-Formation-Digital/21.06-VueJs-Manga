@@ -2,6 +2,7 @@
   <div>
     <b-card-group deck>
       <b-card
+      bacground-color=""
         title="Jikan's"
         footer=""
         footer-tag="footer"
