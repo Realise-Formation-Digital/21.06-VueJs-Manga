@@ -1,37 +1,34 @@
 <template>
-  <div>
-    <b-row>
+  <div style="background-color: rgb(13, 202, 240)">
+            <!-- row logo, social et bouton contact -->
+    <b-row >
+              <!-- col image -->
       <b-col>
-        <div>
-          <b-navbar toggleable="lg" type="dark" variant="info">
-            <!-- Just an image -->
-            <b-navbar variant="faded" type="light">
-              <b-navbar-brand href="#">
-                <img src="../assets/img/logo.jpg" alt="img" width="100px"/>
-              </b-navbar-brand>
-            </b-navbar>
-            <b-navbar-brand href="#">Manga</b-navbar-brand>
 
-
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-            <b-button href="Contact">Contact</b-button>
-            <b-collapse id="nav-collapse" is-nav>
-            </b-collapse>
-                        
-          </b-navbar>
-        </div>
+        <img src="../assets/img/logo.jpg" alt="img" id="logo"  />
+      </b-col>
+                  <!-- col social -->
+       <b-col id="social">
+          <img src="../assets/img/facebook.png" alt="img" width="55px" />
+          <img src="../assets/img/instagram.png" alt="img" width="50px" />
+          <img src="../assets/img/linkedin.png" alt="img" width="45px" />
+      </b-col>
+       
+      <b-col>
+        <b-button href="Contact" id="contact">Contact</b-button>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col> 
-        <p class="copyrights" style="background-color: rgb(13, 202, 240);">
-        Copyright © 2021 manga-news.com | Tous droits réservés<br />Toutes les
-        illustrations sont sous © Copyright donc la propriété de leurs auteurs
-        et éditeurs respectifs.
-      </p>
-      </b-col>
 
-      
+ 
+            <!-- Row copyright -->
+    <b-row>
+      <b-col>
+        <p class="copyrights" id="copy">
+          Copyright © 2021 manga-news.com | Tous droits réservés<br />Toutes les
+          illustrations sont sous © Copyright donc la propriété de leurs auteurs
+          et éditeurs respectifs.
+        </p>
+      </b-col>
     </b-row>
   </div>
 </template>
@@ -43,4 +40,17 @@ export default {
 </script>
 
 <style scoped>
+#contact {
+  margin-top: 130px;
+}
+#logo{
+  margin-top: 60px;
+  width: 100px;
+}
+#copy{
+margin-top: 30px;
+}
+#social{
+  margin-top: 130px;
+}
 </style>
