@@ -1,7 +1,10 @@
 <template>
+
   <div>
     <!--Home/!-->
     <carousel/>
+     <b-container>
+
     <br>
     <div id="content">
 
@@ -252,7 +255,7 @@ en France, les <a href="https://www.manga-news.com/index.php/editeur/fr" class="
 <p>
 </p>
         </div>
-
+      </b-container>
       </div>
  
 </template>

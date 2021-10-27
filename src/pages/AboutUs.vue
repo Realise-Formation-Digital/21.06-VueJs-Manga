@@ -1,4 +1,5 @@
 <template>
+      <b-container>
   <div>
     <h1>ABOUT US</h1>
     <b-img
@@ -56,6 +57,7 @@
       </b-card-group>
     </div>
   </div>
+        </b-container>
 </template>
 
 <script>
