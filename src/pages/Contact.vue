@@ -1,5 +1,6 @@
 <template>
   <b-container>
+    <h1><p class="title text-center">CONTACT</p></h1>
     <b-row>
       <b-col lg="8" md="8" sm="12">
         <!-- Formulaire -->
@@ -123,5 +124,10 @@ export default {
 input,
 textarea {
   width: 100%;
+}
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 </style>
