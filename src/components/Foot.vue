@@ -24,9 +24,7 @@
     <b-row>
       <b-col>
         <p class="copyrights" id="copy">
-          Copyright © 2021 manga-news.com | Tous droits réservés<br />Toutes les
-          illustrations sont sous © Copyright donc la propriété de leurs auteurs
-          et éditeurs respectifs.
+          © Copyright Realise
         </p>
       </b-col>
     </b-row>
