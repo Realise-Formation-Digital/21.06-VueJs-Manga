@@ -4,8 +4,10 @@
      <b-navbar toggleable="sm" type="light" variant="light">
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
+
     <b-navbar-brand><img src= "../assets/img/logo.jpg" width="100
     "></b-navbar-brand>
+
 
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>

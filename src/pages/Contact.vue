@@ -1,5 +1,5 @@
 <template>
-
+      <b-container>
   <div>
     Contact
   
@@ -56,6 +56,7 @@
     </b-col>
   </b-row>
   </div>
+        </b-container>
 </template>
 
 <script>
