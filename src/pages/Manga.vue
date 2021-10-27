@@ -1,5 +1,6 @@
 <template>
       <b-container>
+            <h1><p class="title text-center">MANGAS</p></h1>
   <div>
     <!-- Butto that trigger the events that get the beer list
     <b-btn @click="getBeers()">Get Beers </b-btn>
@@ -111,5 +112,10 @@ export default {
   display: -webkit-box;
   -webkit-line-clamp: 12;
   -webkit-box-orient: vertical;
+}
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 </style>
