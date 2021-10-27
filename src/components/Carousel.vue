@@ -9,7 +9,7 @@
   >
     <!-- Text slides with image -->
     <b-carousel-slide>
-       <h1><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most psychidelics</a></h1>
+       <h1 class="text-success">><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most psychidelics</a></h1>
       <template #img>
         <img
         id=""
