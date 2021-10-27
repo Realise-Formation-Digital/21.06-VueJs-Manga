@@ -6,7 +6,7 @@
 
 
 
-<b-navbar-brand style="margin-left: 80px;"><img src= "../assets/img/logo.jpg" width="100" href="/"></b-navbar-brand>
+<b-navbar-brand style="margin-left: 80px;"><a href="/"><img src= "../assets/img/logo.jpg" width="100"></a></b-navbar-brand>
 
 
 
