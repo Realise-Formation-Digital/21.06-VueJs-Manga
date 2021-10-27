@@ -1,4 +1,5 @@
 <template>
+      <b-container>
   <div>
     <!-- Butto that trigger the events that get the beer list
     <b-btn @click="getBeers()">Get Beers </b-btn>
@@ -48,6 +49,7 @@
       </b-card>
     </b-modal>
   </div>
+        </b-container>
 </template>
 
 <script>

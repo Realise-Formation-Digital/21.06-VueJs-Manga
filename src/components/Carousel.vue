@@ -9,50 +9,53 @@
   >
     <!-- Text slides with image -->
     <b-carousel-slide>
-       <h1><a href="https://myanimelist.net/character/1706/Martis" class="text-warning">Get the most psychidelics</a></h1>
+       <h1><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most psychidelics</a></h1>
       <template #img>
         <img
         id=""
           class="d-block w-100"
-          width="1000"
-          height="480"
-          src="https://cdn.myanimelist.net/images/manga/3/179882.jpg?s=dac8109140406ca296cf4946296b5037"
+          width="1920"
+          height="600"
+          src="../assets/img/slide01.jpeg"
           alt="image slot"
        >
       </template>
     </b-carousel-slide>
 
      <b-carousel-slide>
-        <h1 class="text-success">Get the most populars</h1>
+        <h1 class="text-success"><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most populars</a></h1>
       <template #img>
         <img
           class="d-block w-100"
-          height="480"
-          src="https://cdn.myanimelist.net/images/manga/3/55539.jpg?s=b4d9e935b7152f0c9e69b34a7797fe02"
+          width="1920"
+          height="600"
+          src="../assets/img/slide02.jpeg"
           alt="image slot"
        >
          </template>
     </b-carousel-slide>
     
     <b-carousel-slide>
-      <h1 class="text-dark">Get the most iconics</h1>
+      <h1 class="text-dark"><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most iconics</a></h1>
       <template #img>
         <img
           class="d-block w-100"
-          height="480"
-          src="https://cdn.myanimelist.net/images/manga/2/181787.jpg?s=bbd3ff81b5d8e50781531c60cd68773f"
+          width="1920"
+          height="600"
+          src="../assets/img/slide03.jpeg"
           alt="image slot"
        >
       </template>
     </b-carousel-slide>
 
      <b-carousel-slide>
-      <h1 class="text-danger">Get the most terifics</h1>
+      <h1 class="text-danger"><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most terifics</a></h1>
       <template #img>
         <img
           class="d-block w-100"
-          height="480"
-          src="https://cdn.myanimelist.net/images/manga/3/54525.jpg?s=c660994ac8ba790d9e6bb2400f7c73cd"
+          width="1920"
+          height="600"
+          src="../assets/img/slide04.jpeg"
           alt="image slot"
        >
       </template>

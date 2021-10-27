@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-      <b-container>
+      <b-container fluid="ms">
         <router-view></router-view>
       </b-container>
     <Foot id="foot"/>
