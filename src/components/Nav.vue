@@ -5,7 +5,9 @@
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
 
-    <b-navbar-brand style="margin-left: 80px;"><img src= "../assets/img/logo.jpg" width="100" href="/"></b-navbar-brand>
+
+<b-navbar-brand style="margin-left: 80px;"><img src= "../assets/img/logo.jpg" width="100" href="/"></b-navbar-brand>
+
 
 
 
