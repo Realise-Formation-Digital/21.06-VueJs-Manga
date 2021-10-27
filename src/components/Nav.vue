@@ -1,11 +1,11 @@
 <template>
   <div>
     <!--Nav/!-->
-     <b-navbar toggleable="sm" type="light" variant="light">
+     <b-navbar toggleable="sm" type="light" style="background-color: rgb(13, 202, 240)">
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
 
-    <b-navbar-brand><img src= "../assets/img/logo.jpg" width="100" href="/"></b-navbar-brand>
+    <b-navbar-brand style="margin-left: 75px;"><img src= "../assets/img/logo.jpg" width="100" href="/"></b-navbar-brand>
 
 
 
@@ -14,7 +14,6 @@
         <b-nav-text><b-btn to="/" variant="outline-primary">Home</b-btn></b-nav-text>
       </b-navbar-nav> 
       <b-navbar-nav>
-
         <b-nav-text><b-btn to="/manga" variant="outline-primary">Mangas</b-btn></b-nav-text>
       </b-navbar-nav>
       <b-navbar-nav>
