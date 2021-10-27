@@ -1,56 +1,79 @@
 <template>
-      <b-container>
-            <h1><p class="title text-center">MANGAS</p></h1>
-  <div>
-    <!-- Butto that trigger the events that get the beer list
+  <b-container>
+    <h1><p class="title text-center">MANGAS</p></h1>
+    <div>
+      <!-- Butto that trigger the events that get the beer list
     <b-btn @click="getBeers()">Get Beers </b-btn>
 
     -->
-
-    <!-- Loop over beers -->
-    <b-row>
-      <b-col>
-        <div v-for="(manga, index) in mangas" :key="index">
-          <card
-            class="edinkartica"
-            :id="manga.mal_id"
-            :mangaTitle="manga.title"
-            :rank="manga.rank"
-            :img="manga.image_url"
-            :start_date="manga.start_date"
-            :end_date="manga.end_date"
-            @selectedManga="handleSelectedManga"
-          />
-        </div>
-      </b-col>
-    </b-row>
-    <!-- | MODAL | -->
-    <b-modal v-model="modalShow">
-      <b-card no-body class="overflow-hidden" style="max-width: 540px">
-        <b-row no-gutters>
-          <b-col md="6">
-            <b-card-img
-              :src="selectedManga && selectedManga.image_url"
-              :alt="selectedManga && selectedManga.name"
-              class="rounded-0"
-            ></b-card-img>
-            <a :href="selectedManga && selectedManga.url" target="_blank"
-              >LIEN EXTERNE</a
-            >
-          </b-col>
-          <b-col md="6">
-            <b-card-body :title="selectedManga && selectedManga.name">
-              KANDJI:{{ selectedManga && selectedManga.name_kanji }}<br />
-              <b-card-text class="tekstba">
-                {{ selectedManga && selectedManga.about }}
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-modal>
-  </div>
-        </b-container>
+      <b-row>
+        <b-col>
+          <b-form-input
+            v-model="search"
+            placeholder="Enter your name"
+          ></b-form-input>
+          <b-button @click="searchManga()">Search</b-button>
+        </b-col>
+      </b-row>
+      <br>
+      <!-- Loop over beers -->
+      <b-row>
+        <b-col v-if="searchedManga.length > 0">
+          <div v-for="(manga, index) in searchedManga" :key="index">
+            <card
+              class="edinkartica"
+              :id="manga.mal_id"
+              :mangaTitle="manga.title"
+              :rank="manga.rank"
+              :img="manga.image_url"
+              :start_date="manga.start_date"
+              :end_date="manga.end_date"
+              @selectedManga="handleSelectedManga"
+            />
+          </div>
+        </b-col>
+        <b-col v-else>
+          <div v-for="(manga, index) in mangas" :key="index">
+            <card
+              class="edinkartica"
+              :id="manga.mal_id"
+              :mangaTitle="manga.title"
+              :rank="manga.rank"
+              :img="manga.image_url"
+              :start_date="manga.start_date"
+              :end_date="manga.end_date"
+              @selectedManga="handleSelectedManga"
+            />
+          </div>
+        </b-col>
+      </b-row>
+      <!-- | MODAL | -->
+      <b-modal v-model="modalShow">
+        <b-card no-body class="overflow-hidden" style="max-width: 540px">
+          <b-row no-gutters>
+            <b-col md="6">
+              <b-card-img
+                :src="selectedManga && selectedManga.image_url"
+                :alt="selectedManga && selectedManga.name"
+                class="rounded-0"
+              ></b-card-img>
+              <a :href="selectedManga && selectedManga.url" target="_blank"
+                >LIEN EXTERNE</a
+              >
+            </b-col>
+            <b-col md="6">
+              <b-card-body :title="selectedManga && selectedManga.name">
+                KANDJI:{{ selectedManga && selectedManga.name_kanji }}<br />
+                <b-card-text class="tekstba">
+                  {{ selectedManga && selectedManga.about }}
+                </b-card-text>
+              </b-card-body>
+            </b-col>
+          </b-row>
+        </b-card>
+      </b-modal>
+    </div>
+  </b-container>
 </template>
 
 <script>
@@ -59,9 +82,9 @@ const axios = require("axios"); // import axios to use the REST API
 
 export default {
   name: "Page1",
-          created () {
-            document.title = "Manga | Listes des mangas";
-        },
+  created() {
+    document.title = "Manga | Listes des mangas";
+  },
 
   components: {
     card,
@@ -74,6 +97,8 @@ export default {
       mangas: [],
       modalShow: false,
       selectedManga: null,
+      searchedManga:[],
+      search: null
     };
   },
 
@@ -101,6 +126,12 @@ export default {
       // Stock the result in dynamic variable that connect HTML and JS
       this.mangas = result.data.top;
     },
+
+    searchManga(){
+      this.searchedManga = []
+      const searchedWord = this.search
+      this.searchedManga = this.mangas.filter((m) => m.title.toLowerCase().includes(searchedWord.toLowerCase()))
+    }
   },
 };
 </script>
@@ -116,6 +147,5 @@ export default {
 .title {
   padding-top: 40px;
   padding-bottom: 40px;
-
 }
 </style>
