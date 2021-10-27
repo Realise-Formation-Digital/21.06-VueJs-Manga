@@ -9,34 +9,34 @@
   >
     <!-- Text slides with image -->
     <b-carousel-slide>
-       <h1 class="text-success">><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most psychidelics</a></h1>
+       <h1><a  class="text-warning" href="https://myanimelist.net/manga/56981/Psychedelics" target="_blank">Get the most psychidelics</a></h1>
       <template #img>
         <img
-        id=""
-          class="d-block w-100"
-          width="1920"
-          height="600"
-          src="../assets/img/slide01.jpeg"
-          alt="image slot"
-       >
-      </template>
-    </b-carousel-slide>
-
-     <b-carousel-slide>
-        <h1 class="text-success"><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most populars</a></h1>
-      <template #img>
-        <img
+        
           class="d-block w-100"
           width="1920"
           height="600"
           src="../assets/img/slide02.jpeg"
           alt="image slot"
        >
+      </template>
+    </b-carousel-slide>
+
+     <b-carousel-slide>
+        <h1 ><a class="text-success" href="https://myanimelist.net/anime/2403/Kodomo_no_Jikan_TV" target="_blank">Get the most populars</a></h1>
+      <template #img>
+        <img
+          class="d-block w-100"
+          width="1920"
+          height="600"
+          src="../assets/img/slide01.jpeg"
+          alt="image slot"
+       >
          </template>
     </b-carousel-slide>
     
     <b-carousel-slide>
-      <h1 class="text-dark"><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most iconics</a></h1>
+      <h1 ><a class="text-black" href="https://myanimelist.net/anime/20555/SoniAni__Super_Sonico_The_Animation?q=iconic&cat=anime" target="_blank">Get the most iconic</a></h1>
       <template #img>
         <img
           class="d-block w-100"
@@ -49,7 +49,7 @@
     </b-carousel-slide>
 
      <b-carousel-slide>
-      <h1 class="text-danger"><a href="https://myanimelist.net/character/1706/Martis" target="_blank" class="text-warning">Get the most terifics</a></h1>
+      <h1 ><a class="text-danger" href="https://myanimelist.net/anime/31339/Drifters?q=terrific&cat=anime" target="_blank">Get the most terrifics</a></h1>
       <template #img>
         <img
           class="d-block w-100"

@@ -1,5 +1,6 @@
 <template>
       <b-container>
+            <h1><p class="title text-center">ABOUT US</p></h1>
   <div>
 
     <b-img
@@ -70,7 +71,7 @@ export default {
 </script>
 
 <style scoped>
-h1,
+
 h2 {
   color: red;
   text-align: center;
@@ -78,7 +79,7 @@ h2 {
   text-align-last: center;
 }
 p {
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
 }
 #name {
@@ -102,5 +103,9 @@ h4,
 .h4 {
   text-align: center;
   font-size: 1.5rem;
+}
+.title {
+  padding-bottom: 40px;
+
 }
 </style>

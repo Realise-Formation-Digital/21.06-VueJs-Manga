@@ -1,5 +1,6 @@
 <template>
   <b-container>
+    <h1><p class="title text-center">CONTACT</p></h1>
     <b-row>
       <b-col lg="8" md="8" sm="12">
         <!-- Formulaire -->
@@ -74,10 +75,12 @@
 </template>
 
 <script>
+/* Import axios */
 import axios from "axios";
 
 export default {
   name: "Contact",
+  /* Our title page */
   created() {
     document.title = "Manga | Contact";
   },
@@ -92,6 +95,7 @@ export default {
     };
   },
   methods: {
+    /* WRITE DATA TO JSONSERVER */
     submitForm() {
       axios
         .post("http://localhost:3000/mails", {
@@ -120,5 +124,10 @@ export default {
 input,
 textarea {
   width: 100%;
+}
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 </style>
