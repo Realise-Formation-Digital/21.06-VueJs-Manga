@@ -1,6 +1,6 @@
 <template>
       <b-container>
-            <h1><p class="title text-center">MANGAS</p></h1>
+            <h1><p class="title text-center">MANGAS </p></h1>
   <div>
     <!-- | CARD | -->
     <b-row>
