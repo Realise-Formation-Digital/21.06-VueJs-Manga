@@ -8,6 +8,8 @@
     <b-navbar-brand><img src= "../assets/img/logo.jpg" width="100
     "></b-navbar-brand>
 
+
+
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-text><b-btn to="/" variant="outline-primary">Home</b-btn></b-nav-text>
