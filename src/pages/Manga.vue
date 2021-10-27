@@ -2,12 +2,7 @@
       <b-container>
             <h1><p class="title text-center">MANGAS</p></h1>
   <div>
-    <!-- Butto that trigger the events that get the beer list
-    <b-btn @click="getBeers()">Get Beers </b-btn>
-
-    -->
-
-    <!-- Loop over beers -->
+    <!-- | CARD | -->
     <b-row>
       <b-col>
         <div v-for="(manga, index) in mangas" :key="index">
@@ -56,20 +51,22 @@
 <script>
 import card from "../components/card.vue";
 const axios = require("axios"); // import axios to use the REST API
-
 export default {
   name: "Page1",
+          // Page title
           created () {
             document.title = "Manga | Listes des mangas";
         },
 
   components: {
+    // our components
     card,
   },
   mounted() {
     this.getMangas();
   },
   data() {
+    // return data
     return {
       mangas: [],
       modalShow: false,
@@ -82,7 +79,7 @@ export default {
       console.log("Recu", message);
     },
     async handleSelectedManga(id) {
-      console.log("ecoute", id);
+      //console.log("ecoute", id);
       this.selectedManga = null;
       const caractereid = await axios.get(
         "http://192.168.1.61:8000/v3/character/" + id
