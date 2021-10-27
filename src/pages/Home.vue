@@ -267,6 +267,9 @@ import Carousel from '../components/Carousel.vue'
 
 export default {
   name: "Home",
+            created () {
+            document.title = "Bienvenue sur site des mangas";
+        },
    components: {
    Carousel
   }
