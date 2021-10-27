@@ -74,10 +74,12 @@
 </template>
 
 <script>
+/* Import axios */
 import axios from "axios";
 
 export default {
   name: "Contact",
+  /* Our title page */
   created() {
     document.title = "Manga | Contact";
   },
@@ -92,6 +94,7 @@ export default {
     };
   },
   methods: {
+    /* WRITE DATA TO JSONSERVER */
     submitForm() {
       axios
         .post("http://localhost:3000/mails", {
