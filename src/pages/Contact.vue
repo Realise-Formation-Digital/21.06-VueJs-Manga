@@ -45,8 +45,7 @@
         </div>
       </b-col>
       <b-col lg="4" md="4" sm="12">
-        <img src="https://www.myutaku.com/media/personnage/4942.jpg" height="240
-  ">
+ 
         <h2>Horaire:</h2>
         <b>Lundi</b>: 09:00–17:00<br />
         <b>Mardi</b>: 09:00–17:00<br />
