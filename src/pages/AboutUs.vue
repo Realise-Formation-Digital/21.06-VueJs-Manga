@@ -1,7 +1,7 @@
 <template>
       <b-container>
   <div>
-    <h1>ABOUT US</h1>
+
     <b-img
       src="https://www.giardiniblog.it/wp-content/uploads/2020/05/Migliori-siti-per-leggere-manga.jpg"
       fluid
